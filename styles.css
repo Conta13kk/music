@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc0cb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.container {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  background: #ffe6f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #ff66b2;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #ff80bf;
+}
+
+.aviso {
+  color: #e9137e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.botao button {
+  margin: 20px;
+  background-color: #fecee5;
+  border: 3 solid;
+  border-color: #ffe6f2;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao button:hover {
+  background-color: #ffb6d9;
+}
+
+.cachorro img {
+  width: 80px;
+  position: relative;
+  right: 130px;
+  bottom: 50px;
+}
+
+.music {
+  margin-top: 20px;
+}
+
+.music h2 {
+  color: #ff4da6;
+  font-size: 1.5em;
+}
+
+audio {
+  margin-top: 10px;
+}
+
+.floating-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2em;
+  animation: float 7s infinite ease-in-out;
+}
+
+footer {
+  background-color: rgb(255, 77, 166, 0.1);
+  /* Cor de fundo do rodapé */
+  color: #f958a8;
+  /* Cor do texto */
+  text-align: center;
+  /* Alinha o texto ao centro */
+  padding: 0;
+  /* Espaçamento interno */
+  width: 100%;
+  /* Largura total da página */
+  position: absolute;
+  /* Posiciona o rodapé */
+  bottom: 0;
+  /* Alinha ao fundo da página */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh) scale(0.5);
+      opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  .message {
+      font-size: 1.1em;
+  }
+
+  .music h2 {
+      font-size: 1.3em;
+  }
+
+  .heart {
+      font-size: 1.5em;
+  }
+
+  .cachorro img {
+      width: 60px;
+      right: 110px;
+      bottom: 40px;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  .message {
+      font-size: 1em;
+  }
+
+  .music h2 {
+      font-size: 1.1em;
+  }
+
+  .heart {
+      font-size: 1.2em;
+  }
+
+  .cachorro img {
+      width: 55px;
+      right: 100px;
+      bottom: 40px;
+  }
+
+  footer {
+    padding: 0;
+    width: 100%;
+  }
+}
